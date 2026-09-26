@@ -13,7 +13,7 @@ public class UserRepositoryConfig {
     @Value("${hostname}")
     String hostname;
 
-    @Value("${port:5432}")
+    @Value("${port}")
     int port;
 
     @Value("${database}")
@@ -24,7 +24,6 @@ public class UserRepositoryConfig {
 
     @Value("${password}")
     String password;
-
 
     @Bean
     public DataSource pgUserDataSource() {
