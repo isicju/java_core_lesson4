@@ -29,7 +29,7 @@ public class UserRepositoryConfig {
     public DataSource pgUserDataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setServerNames(new String[]{"158.220.122.4"});
-        dataSource.setPortNumbers(new int[]{8789});
+        dataSource.setPortNumbers(new int[]{8787});
         dataSource.setDatabaseName("hr");
         dataSource.setUser("hr_admin");
         dataSource.setPassword("hr_password");
