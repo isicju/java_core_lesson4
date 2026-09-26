@@ -21,6 +21,10 @@ tasks.named('jar') {
     archiveFileName = 'app.jar'
 }
 
+tasks.named('jar') {
+    enabled = false
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
 

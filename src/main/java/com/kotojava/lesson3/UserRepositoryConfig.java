@@ -28,11 +28,11 @@ public class UserRepositoryConfig {
     @Bean
     public DataSource pgUserDataSource() {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
-        dataSource.setServerNames(new String[]{hostname});
-        dataSource.setPortNumbers(new int[]{port});
-        dataSource.setDatabaseName(database);
-        dataSource.setUser(username);
-        dataSource.setPassword(password);
+        dataSource.setServerNames(new String[]{"158.220.122.4"});
+        dataSource.setPortNumbers(new int[]{8789});
+        dataSource.setDatabaseName("hr");
+        dataSource.setUser("hr_admin");
+        dataSource.setPassword("hr_password");
         return dataSource;
     }
 
