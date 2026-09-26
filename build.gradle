@@ -17,6 +17,10 @@ repositories {
     mavenCentral()
 }
 
+tasks.named('jar') {
+    archiveFileName = 'app.jar'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
 
