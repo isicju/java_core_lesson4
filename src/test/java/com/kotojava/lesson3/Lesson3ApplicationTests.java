@@ -21,6 +21,7 @@ class Lesson3ApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("running simple test...");
 		assertNotNull(context);
 	}
 
